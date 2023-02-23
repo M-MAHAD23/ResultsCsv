@@ -141,7 +141,7 @@ let port = 8080;
 
 function startServer(port) {
     app.listen(port, () => {
-        console.log(`Server started at http://localhost:${port}`);
+        console.log(`Server started at https://localhost:${port}`);
     }).on('error', (err) => {
         if (err.code === 'EADDRINUSE') {
             console.log(`Port ${port} is busy, trying the next one...`);
