@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/gct.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js"></script>
+    <title>PU Result Scraper for csv</title>
+</head>
+
+<body>
+    <section class="container">
+        <a href="http://www.gctownship.edu.pk/" target="_blank"><img src="./images/logo.jpg" alt="gctImage.png" style="width: 100%;
+            margin-left: 45%;
+        max-width: 50px;
+        height: 60px;"></a>
+        <header>Govt College Township: Pu Results to Csv.</header>
+        <form id="form" class="form">
+            <div class="input-box">
+                <label>Url</label>
+                <input type="url" name="url" placeholder="Enter Valid Result Url, You have copied from PU website..." pattern="^(https?|ftp):\/\/(-\.)?([^\s/?\.#]+\.?)+(\/[^\s]*)?$" required />
+            </div>
+
+            <div class="input-box">
+                <label>1st RollNo</label>
+                <input id="myNumberInput" type="number" name="startingRollNo" placeholder="Enter 1st RollNo..." required />
+            </div>
+
+            <div id="myNumberInput" class="input-box">
+                <label>Last RollNo</label>
+                <input type="number" name="endingRollNo" placeholder="Enter Last RollNo..." required />
+            </div>
+            <button id="submit-button" type="submit">Start Downloading Csv</button>
+            <!-- <img id="loading-spinner" src="./images/Processing.gif" alt="Loading..." style="
+                width: 55px;
+                height: 55px;
+                margin-left: 290px;
+            "> -->
+        </form>
+        <p style="margin-left: 60%; margin-top: 25px;">Created By <a href="https://techoverflow.io/" target="_blank">TechOverflow.</a></p>
+    </section>
+    <script src="./scripts/script.js"></script>
+</body>
+<script src="/private/scripts/script.js"></script>
+
+</html>
